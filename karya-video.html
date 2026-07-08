@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Karya - Aswin Bagas</title>
+    <link rel="icon" href="media/a.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="header-container">
+            <h1>aswinbagas</h1>
+            <button class="hamburger" id="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Tentang Saya</a>
+                <div class="dropdown">
+                    <a href="karya.html">Karya<span class="panah">▾</span></a>
+                    <div class="dropdown-content">
+                        
+                        <!-- NESTED DROPDOWN 1: Karya Video -->
+                        <div class="nested-dropdown">
+                            <a href="karya-video.html"><span class="panah-kiri">◂</span>Karya Video</a>
+                            <div class="nested-dropdown-content">
+                                <a href="karya-video.html#sorotan">Sorotan Utama</a>
+                                <a href="karya-video.html#motion">Motion Graphic</a>
+                                <a href="karya-video.html#film">Film</a>
+                                <a href="karya-video.html#aftermovie">Aftermovie & Recap</a>
+                                <a href="karya-video.html#teaser">Teaser</a>
+                            </div>
+                        </div>
+
+                        <!-- NESTED DROPDOWN 2: Karya Pemrograman (Blueprint Baru) -->
+                        <div class="nested-dropdown">
+                            <a href="karya-pemrograman.html"><span class="panah-kiri">◂</span>Karya Pemrograman</a>
+                            
+                            <!-- Isi Sub-menu Pemrograman -->
+                            <div class="nested-dropdown-content">
+                                <a href="maintenance.html">Semua Proyek IT</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="index.html#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Galeri Karya Hybrid Berdasarkan Kategori -->
+    <section id="galeri-video">
+
+        <a href="karya.html" class="btn-kembali">
+            <i class="fas fa-arrow-left"></i> Kembali ke Pilihan Karya
+        </a>
+        
+        <!-- KATEGORI 1 (Ditambah ID) -->
+        <h2 id="sorotan">Sorotan Utama</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/interprestasi.jpg" alt="Thumbnail Sorotan">
+                    <a href="page/interprestasi.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>INTERPRESTASI</h3>
+                    <p>Short Movie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/phkri.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/phkri.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>PHKRI</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/bcdbl1.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/bcdbl1.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>Broadcast SongoMania DBL 1</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- KATEGORI 2 (Ditambah ID) -->
+        <h2 id="motion" class="kategori-jarak">Motion Graphic</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/aeternav.jpeg" alt="Thumbnail Motion Graphic">
+                    <a href="page/aeternav.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Photo Moment - Part of Aeternav'26</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/bcdbl1.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/bcdbl1.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>Broadcast SongoMania DBL 1</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/bcdbl2.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/bcdbl2.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>Broadcast SongoMania DBL 2</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/teaser1taraka.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/teaser1taraka.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>Teaser 1 TARAKA Season 1</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/teaser2taraka.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/teaser2taraka.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>Teaser 2 TARAKA Season 1</h3>
+                    <p>Motion Graphic</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- KATEGORI 3 (Ditambah ID) -->
+        <h2 id="film" class="kategori-jarak">Film</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/interprestasi.jpg" alt="Thumbnail Sorotan">
+                    <a href="page/interprestasi.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>INTERPRESTASI</h3>
+                    <p>Short Movie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/teaserc9.jpg" alt="Thumbnail Film">
+                    <a href="page/teaserc9.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Teaser C'9 2k25</h3>
+                    <p>Short Movie</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- KATEGORI 4 (Ditambah ID) -->
+        <h2 id="aftermovie" class="kategori-jarak">Aftermovie & Recap</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/phkri.jpg" alt="Thumbnail Baru">
+                    
+                    <a href="page/phkri.html" class="play-button">▶ Putar Video</a> 
+                </div>
+                <div class="video-info">
+                    <h3>PHKRI</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/lkbb-sila.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/lkbb-sila.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>LKBB SILA SEASON 16</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/raga.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/raga.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>RA9A 2K25</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/taraka.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/taraka.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>TARAKA SEASON 1</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/tmraga.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/tmraga.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Technical Meeting RA9A 2k25</h3>
+                    <p>Recap</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/raga1.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/raga1.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>RA9A 2k25 Day 1</h3>
+                    <p>Recap</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/raga2.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/raga2.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>RA9A 2k25 Day 2</h3>
+                    <p>Recap</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/raga3.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/raga3.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>RA9A 2k25 Day 3</h3>
+                    <p>Recap</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/supportdbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/supportdbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Support Video DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/sotr.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/sotr.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>SOTR SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/songmanberbagi.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/songmanberbagi.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>SongoMania 2025 Berbagi</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/day1dbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/day1dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Day 1 DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/day2dbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/day2dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Day 2 DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/day4dbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/day4dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Day 4 DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/day5dbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/day5dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Day 5 DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/day6dbl.jpg" alt="Thumbnail Aftermovie">
+                    <a href="page/day6dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Day 6 DBL SongoMania 2025</h3>
+                    <p>Aftermovie</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="teaser" class="kategori-jarak">Teaser</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/teasersila.jpg" alt="Thumbnail Film">
+                    <a href="page/teasersila.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Teaser SILA 2K25</h3>
+                    <p>Cinematic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/h-1dbl.jpg" alt="Thumbnail Film">
+                    <a href="page/h-1dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Teaser H-1 DBL SONGOMANIA 2K25</h3>
+                    <p>Cinematic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/h-2dbl.jpg" alt="Thumbnail Film">
+                    <a href="page/h-2dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Teaser H-2 DBL SONGOMANIA 2K25</h3>
+                    <p>Cinematic</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="media/h-3dbl.jpg" alt="Thumbnail Film">
+                    <a href="page/h-3dbl.html" class="play-button">▶ Putar Video</a>
+                </div>
+                <div class="video-info">
+                    <h3>Teaser H-3 DBL SONGOMANIA 2K25</h3>
+                    <p>Cinematic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <h2>Hubungi Saya</h2>
+        <div class="kontak-container">
+            <a href="mailto:aswinbagasdewanala@gmail.com" class="icon-kontak" title="Kirim Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281330770718" class="icon-kontak" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/dewanalla" class="icon-kontak" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aswinbagas" class="icon-kontak" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://youtube.com/@kuwertii" class="icon-kontak" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://linkedin.com/in/aswinbagas" class="icon-kontak" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://discordapp.com/users/707838811522203659" class="icon-kontak" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Aswin Bagas Dewa Nala. All rights reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Navigasi -->
+    <script>
+        // 1. Script Hamburger Menu
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('aktif');
+            navMenu.classList.toggle('muncul');
+        });
+
+        // 2. Script Dropdown & Animasi Panah (Mobile)
+        const dropdownLink = document.querySelector('.dropdown > a');
+        const dropdownParent = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // Mencegah pindah halaman
+                dropdownContent.classList.toggle('buka'); // Animasi menu turun
+                dropdownParent.classList.toggle('buka-panah'); // Animasi panah berputar
+            }
+        });
+
+        // 3. Script Sticky Header & Transparansi
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            // Jika layar digeser ke bawah lebih dari 50px, aktifkan efek kaca
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                // Jika kembali ke paling atas, kembalikan ke wujud padat aslinya
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

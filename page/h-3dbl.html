@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-3 DBL SONGOMANIA 2025 | TEASER</title>
+    <link rel="icon" href="../media/a.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (Sama dengan halaman lainnya) -->
+    <header>
+        <div class="header-container">
+            <h1>aswinbagas</h1>
+            <button class="hamburger" id="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Tentang Saya</a>
+                <div class="dropdown">
+                    <a href="../karya.html">Karya<span class="panah">▾</span></a>
+                    <div class="dropdown-content">
+                        
+                        <!-- NESTED DROPDOWN 1: Karya Video -->
+                        <div class="nested-dropdown">
+                            <a href="../karya-video.html"><span class="panah-kiri">◂</span>Karya Video</a>
+                            <div class="nested-dropdown-content">
+                                <a href="../karya-video.html#sorotan">Sorotan Utama</a>
+                                <a href="../karya-video.html#motion">Motion Graphic</a>
+                                <a href="../karya-video.html#film">Film</a>
+                                <a href="../karya-video.html#aftermovie">Aftermovie & Recap</a>
+                                <a href="../karya-video.html#teaser">Teaser</a>
+                            </div>
+                        </div>
+
+                        <!-- NESTED DROPDOWN 2: Karya Pemrograman (Blueprint Baru) -->
+                        <div class="nested-dropdown">
+                            <a href="../maintenance.html"><span class="panah-kiri">◂</span>Karya Pemrograman</a>
+                            
+                            <!-- Isi Sub-menu Pemrograman -->
+                            <div class="nested-dropdown-content">
+                                <a href="../maintenance.html">Semua Proyek IT</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="index.html#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Pemutar Video Utama -->
+    <section id="pemutar-video">
+        
+        <!-- Tombol Kembali -->
+        <a href="karya.html" onclick="window.history.back(); return false;" class="btn-kembali">← Kembali ke Galeri</a>
+        
+        <!-- Kotak Pemutar Video -->
+        <div class="video-utama">
+            <div class="video-responsive">
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Te48gyIylOc?si=Xlxokfmv5Ryzss97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Detail dan Deskripsi -->
+        <div class="deskripsi-video">
+            <h2 class="judul-video">H-3 DBL SONGOMANIA 2025</h2>
+            <p class="tag-video">Teaser</p>
+            <p>Edited by: Aswin Bagas Dewa Nala <br> Footage by: Aswin Bagas Dewa Nala</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <h2>Hubungi Saya</h2>
+        <div class="kontak-container">
+            <a href="mailto:aswinbagasdewanala@gmail.com" class="icon-kontak" title="Kirim Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281330770718" class="icon-kontak" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/dewanalla" class="icon-kontak" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aswinbagas" class="icon-kontak" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://youtube.com/@kuwertii" class="icon-kontak" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://linkedin.com/in/aswinbagas" class="icon-kontak" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://discordapp.com/users/707838811522203659" class="icon-kontak" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Aswin Bagas Dewa Nala. All rights reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Navigasi -->
+    <script>
+        // 1. Script Hamburger Menu
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('aktif');
+            navMenu.classList.toggle('muncul');
+        });
+
+        // 2. Script Dropdown Mobile (Sistem Saklar / Toggle)
+        const dropdownLink = document.querySelector('.dropdown > a');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdownLink.addEventListener('click', function(e) {
+            // Cek apakah layar seukuran HP
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // KUNCI: Hentikan browser pindah halaman
+                dropdownContent.classList.toggle('buka'); // Buka jika tutup, tutup jika buka!
+            }
+        });
+
+        // 3. Script Sticky Header & Transparansi
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            // Jika layar digeser ke bawah lebih dari 50px, aktifkan efek kaca
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                // Jika kembali ke paling atas, kembalikan ke wujud padat aslinya
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

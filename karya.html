@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Karya - Aswin Bagas</title>
+    <link rel="icon" type="image/png" href="media/a.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="header-container">
+            <h1>aswinbagas</h1>
+            <button class="hamburger" id="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Tentang Saya</a>
+                <div class="dropdown">
+                    <a href="karya.html">Karya<span class="panah">▾</span></a>
+                    <div class="dropdown-content">
+                        
+                        <!-- NESTED DROPDOWN 1: Karya Video -->
+                        <div class="nested-dropdown">
+                            <a href="karya-video.html"><span class="panah-kiri">◂</span>Karya Video</a>
+                            <div class="nested-dropdown-content">
+                                <a href="karya-video.html#sorotan">Sorotan Utama</a>
+                                <a href="karya-video.html#motion">Motion Graphic</a>
+                                <a href="karya-video.html#film">Film</a>
+                                <a href="karya-video.html#aftermovie">Aftermovie & Recap</a>
+                                <a href="karya-video.html#teaser">Teaser</a>
+                            </div>
+                        </div>
+
+                        <!-- NESTED DROPDOWN 2: Karya Pemrograman (Blueprint Baru) -->
+                        <div class="nested-dropdown">
+                            <a href="karya-pemrograman.html"><span class="panah-kiri">◂</span>Karya Pemrograman</a>
+                            
+                            <!-- Isi Sub-menu Pemrograman -->
+                            <div class="nested-dropdown-content">
+                                <a href="karya-pemrograman.html">Semua Proyek IT</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="index.html#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Pemilihan Karya -->
+    <section id="pilihan-karya" class="kategori-jarak">
+        <h2 style="text-align: center; border-bottom: none; font-size: 2.5rem; margin-bottom: 10px;">Portofolio Karya</h2>
+        <p style="text-align: center; color: #9cbdae; margin-bottom: 50px;">Pilih kategori proyek yang ingin Anda jelajahi.</p>
+        
+        <div class="karya-split-container">
+            <!-- Pilihan Video -->
+            <a href="karya-video.html" class="kartu-kategori">
+                <i class="fas fa-film ikon-kategori"></i>
+                <h3>Karya Video</h3>
+                <p>Eksplorasi visual melalui proses editing, motion graphic, dan penyutradaraan sinematografi.</p>
+            </a>
+
+            <!-- Pilihan Pemrograman -->
+            <a href="karya-pemrograman.html" class="kartu-kategori">
+                <i class="fas fa-code ikon-kategori"></i>
+                <h3>Karya Pemrograman</h3>
+                <p>Proyek pengembangan perangkat lunak, rekayasa website, dan eksplorasi teknologi.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tempat otomatis untuk Footer (Jika kamu pakai sistem script fetch) -->
+    <footer id="kontak">
+        <h2>Hubungi Saya</h2>
+        <div class="kontak-container">
+            <a href="mailto:aswinbagasdewanala@gmail.com" class="icon-kontak" title="Kirim Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281330770718" class="icon-kontak" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/dewanalla" class="icon-kontak" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aswinbagas" class="icon-kontak" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://youtube.com/@kuwertii" class="icon-kontak" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://linkedin.com/in/aswinbagas" class="icon-kontak" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://discordapp.com/users/707838811522203659" class="icon-kontak" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Aswin Bagas Dewa Nala. All rights reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Navigasi -->
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('aktif');
+            navMenu.classList.toggle('muncul');
+        });
+        const dropdownLink = document.querySelector('.dropdown > a');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdownContent.classList.toggle('buka');
+            }
+        });
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) { header.classList.add('scrolled'); } 
+            else { header.classList.remove('scrolled'); }
+        });
+        // Script Nested Dropdown Mobile (Mendukung BANYAK Sub-menu sekaligus)
+        const semuaNestedDropdown = document.querySelectorAll('.nested-dropdown');
+
+        semuaNestedDropdown.forEach(dropdown => {
+            const linkInduk = dropdown.querySelector('a');
+            const kontenSubMenu = dropdown.querySelector('.nested-dropdown-content');
+
+            if (linkInduk) {
+                linkInduk.addEventListener('click', function(e) {
+                    // Hanya aktif saat dibuka di layar HP
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault(); // Mencegah browser pindah halaman
+                        kontenSubMenu.classList.toggle('buka');
+                        dropdown.classList.toggle('buka-panah');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="icon" href="media/a.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>aswinbagas</h1>
+            <button class="hamburger" id="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu">
+                <a href="index.html">Tentang Saya</a>
+                <div class="dropdown">
+                    <a href="karya.html">Karya<span class="panah">▾</span></a>
+                    <div class="dropdown-content">
+                        
+                        <!-- NESTED DROPDOWN 1: Karya Video -->
+                        <div class="nested-dropdown">
+                            <a href="karya-video.html"><span class="panah-kiri">◂</span>Karya Video</a>
+                            <div class="nested-dropdown-content">
+                                <a href="karya-video.html#sorotan">Sorotan Utama</a>
+                                <a href="karya-video.html#motion">Motion Graphic</a>
+                                <a href="karya-video.html#film">Film</a>
+                                <a href="karya-video.html#aftermovie">Aftermovie & Recap</a>
+                                <a href="karya-video.html#teaser">Teaser</a>
+                            </div>
+                        </div>
+
+                        <!-- NESTED DROPDOWN 2: Karya Pemrograman (Blueprint Baru) -->
+                        <div class="nested-dropdown">
+                            <a href="karya-pemrograman.html"><span class="panah-kiri">◂</span>Karya Pemrograman</a>
+                            
+                            <!-- Isi Sub-menu Pemrograman -->
+                            <div class="nested-dropdown-content">
+                                <a href="maintenance.html">Semua Proyek IT</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="index.html#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="tentang" class="kategori-jarak">
+        <div class="modern-layout">
+            
+            <div class="kolom-teks">
+                <span class="sapaan">Halo Semua 👋, Saya</span>
+                <h1 class="nama-besar">Aswin Bagas Dewa Nala</h1>
+                <h3 class="profesi-tag">
+                    Mahasiswa <a href="https://www.pens.ac.id/" target="_blank" class="link-kampus">Politeknik Elektronika Negeri Surabaya</a>
+                </h3>
+                
+                <p class="deskripsi-hero">
+                    Portofolio ini menampilkan karya-karya saya dalam bidang video editing, dan pemrograman. Saya berkomitmen untuk menghadirkan karya yang menarik dan berkualitas tinggi.
+                </p>
+                
+                <div class="grup-tombol">
+                    <a href="#kontak" class="btn-utama">Hubungi Saya</a>
+                    <a href="karya.html" class="btn-kedua">Lihat Karya</a>
+                </div>
+            </div>
+
+            <div class="kolom-foto">
+                <img src="media/foto-profil.jpg" alt="Aswin Bagas" class="foto-hero">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="keahlian" class="kategori-jarak">
+        <h2 style="text-align: center; border-bottom: none; font-size: 2.5rem; margin-bottom: 40px;">Keahlian & Kemampuan</h2>
+        
+        <div class="skills-container">
+            
+            <div class="skill-kategori">
+                <h3 class="judul-kategori"><i class="fas fa-video"></i> Video Editing</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Adobe Premiere Pro</span>
+                        <span class="skill-level">Very Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">CapCut</span>
+                        <span class="skill-level">Very Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Adobe After Effects</span>
+                        <span class="skill-level">Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Canva</span>
+                        <span class="skill-level">Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Adobe Illustrator</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-kategori">
+                <h3 class="judul-kategori"><i class="fas fa-code"></i> Pemrograman</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">HTML</span>
+                        <span class="skill-level">Very Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Python</span>
+                        <span class="skill-level">Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">C / C# / C++</span>
+                        <span class="skill-level">Good</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">CSS</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">JavaScript</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Java</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Kotlin</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">PHP</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">YAML</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">JSON</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-nama">Bash / Shell Script</span>
+                        <span class="skill-level">So-So</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- BAGIAN RIWAYAT PENDIDIKAN --- -->
+    <section id="pendidikan" class="kategori-jarak" style="margin-top: 100px;">
+        <h3 style="text-align: center; color: #4ade80; font-size: 1.2rem; margin-bottom: 5px;">Pendidikan & Bootcamp</h3>
+        <h2 style="text-align: center; border-bottom: none; font-size: 2.5rem; margin-bottom: 10px;">Riwayat Pendidikan</h2>
+        <p style="text-align: center; color: #9cbdae; margin-bottom: 60px;">Pernah dan sedang belajar pada program dan institusi berikut</p>
+
+        <div class="logo-pendidikan-container">
+            
+            <div class="logo-item-wrapper has-tooltip" data-tooltip="Lulus Tahun 2020">
+                <img src="media/logo-sd.png" alt="SD Negeri Gubeng 1 Surabaya" class="logo-pendidikan">
+            </div>
+
+            <a href="https://smpn6sby.sch.id/" target="_blank" class="logo-item-wrapper has-tooltip" data-tooltip="Lulus Tahun 2023">
+                <img src="media/logo-smp.png" alt="SMP Negeri 6 Surabaya" class="logo-pendidikan">
+            </a>
+
+            <a href="https://sman9surabaya.sch.id/" target="_blank" class="logo-item-wrapper has-tooltip" data-tooltip="Lulus Tahun 2026">
+                <img src="media/logo-sma.png" alt="SMA Negeri 9 Surabaya" class="logo-pendidikan">
+            </a>
+
+            <a href="https://www.pens.ac.id/" target="_blank" class="logo-item-wrapper has-tooltip" data-tooltip="Sedang Belajar">
+                <img src="media/logo-pens.png" alt="Politeknik Elektronika Negeri Surabaya" class="logo-pendidikan">
+            </a>
+
+            <a href="https://revou.co/" target="_blank" class="logo-item-wrapper has-tooltip" data-tooltip="Audit">
+                <img src="media/logo-revou.png" alt="RevoU Coding Camp Software Engineering" class="logo-pendidikan">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Bagian Footer / Kontak -->
+    <footer id="kontak">
+        <h2>Hubungi Saya</h2>
+        <div class="kontak-container">
+            <a href="mailto:aswinbagasdewanala@gmail.com" class="icon-kontak" title="Kirim Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281330770718" class="icon-kontak" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/dewanalla" class="icon-kontak" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aswinbagas" class="icon-kontak" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://youtube.com/@kuwertii" class="icon-kontak" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://linkedin.com/in/aswinbagas" class="icon-kontak" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://discordapp.com/users/707838811522203659" class="icon-kontak" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Aswin Bagas Dewa Nala. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 1. Script Hamburger Menu
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('aktif');
+            navMenu.classList.toggle('muncul');
+        });
+
+        // 2. Script Dropdown & Animasi Panah (Mobile)
+        const dropdownLink = document.querySelector('.dropdown > a');
+        const dropdownParent = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // Mencegah pindah halaman
+                dropdownContent.classList.toggle('buka'); // Animasi menu turun
+                dropdownParent.classList.toggle('buka-panah'); // Animasi panah berputar
+            }
+        });
+
+        // 3. Script Sticky Header & Transparansi
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            // Jika layar digeser ke bawah lebih dari 50px, aktifkan efek kaca
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                // Jika kembali ke paling atas, kembalikan ke wujud padat aslinya
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
